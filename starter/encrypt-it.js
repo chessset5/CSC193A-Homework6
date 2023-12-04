@@ -17,7 +17,19 @@
   function init() {
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page.
-    console.log("Window loaded!"); // Log a message to the console when the page is loaded
+
+    // Add an event listener to the "Encrypt-It!" button
+    var encryptButton = document.getElementById("encrypt-it");
+    encryptButton.addEventListener("click", handleClick);
+  }
+
+  /**
+   * Handles the click event on the "Encrypt-It!" button.
+   */
+  function handleClick() {
+    console.log("Button clicked!"); // Log a message to the console when the button is clicked
+
+    // Add the logic here to perform encryption or any other actions you need
   }
 
   // Add any other functions in this area (you should not implement your
