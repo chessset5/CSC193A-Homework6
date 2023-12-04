@@ -21,6 +21,10 @@
     // Add an event listener to the "Encrypt-It!" button
     var encryptButton = document.getElementById("encrypt-it");
     encryptButton.addEventListener("click", handleClick);
+
+    // Add an event listener to the "Reset" button
+    var resetButton = document.getElementById("reset");
+    resetButton.addEventListener("click", handleReset);
   }
 
   /**
@@ -30,6 +34,16 @@
     console.log("Button clicked!"); // Log a message to the console when the button is clicked
 
     // Add the logic here to perform encryption or any other actions you need
+  }
+
+  /**
+   * Handles the click event on the "Reset" button.
+   */
+  function handleReset() {
+    var inputText = document.getElementById("input-text");
+    inputText.value = ""; // Clear the text inside the textarea
+
+    // Additional logic can be added here if needed
   }
 
   // Add any other functions in this area (you should not implement your
