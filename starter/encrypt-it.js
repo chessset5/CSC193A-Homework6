@@ -1,7 +1,7 @@
 /*
- * Starter file 
+ * Starter file
  */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -12,15 +12,15 @@
   window.addEventListener("load", init);
 
   /**
-   * TODO: Write a function comment using JSDoc.
+   * Initializes the page.
    */
   function init() {
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page.
+    console.log("Window loaded!"); // Log a message to the console when the page is loaded
   }
 
   // Add any other functions in this area (you should not implement your
   // entire program in the init function, for similar reasons that
   // you shouldn't write an entire Java program in the main method).
-
 })();
